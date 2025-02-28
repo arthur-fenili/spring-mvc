@@ -25,8 +25,10 @@ public class Livro {
     @Column(name = "categoria")
     @Enumerated(EnumType.STRING)
     private Categoria categoria;
+
     @Column(name = "preco")
     private BigDecimal preco;
+
     @Column(name = "isbn")
     private String isbn;
 

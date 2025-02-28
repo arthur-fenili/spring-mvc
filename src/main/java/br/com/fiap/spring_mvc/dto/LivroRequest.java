@@ -17,7 +17,7 @@ public class LivroRequest {
         private String autor;
         @NotNull(message = "A categoria é obrigatória")
         private Categoria categoria;
-        @NotBlank(message = "O preço é obrigatório")
+        @NotNull(message = "O preço é obrigatório")
         private BigDecimal preco;
         @NotBlank(message = "O ISBN é obrigatório")
         @Pattern(regexp = "^970\\d{7}$|^970\\d{10}$", message = "O ISBN deve seguir o padrão internacional.")

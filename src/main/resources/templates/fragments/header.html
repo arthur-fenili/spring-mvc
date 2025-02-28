@@ -5,9 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-    <div th:fragment="header">
-        <h1>>>>>>>HEADER AQUI <<<<<<</h1>
-        <hr>
+    <div th:fragment="header" class="header">
+        <h1>Biblioteca Virtual</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" th:ref="@{/livro/cadastro}">Cadastrar livro</a>
+                <a class="nav-item nav-link" th:ref="@{/livro/lista}">Listar livros</a>
+            </div>
+        </nav>
+
+        <hr />
     </div>
 </body>
 </html>
